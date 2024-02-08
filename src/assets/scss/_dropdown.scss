@@ -1,0 +1,38 @@
+.dropdown {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border: 1px solid #706f6f;
+    
+    .dropdown-header {
+        padding: 15px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .dropdown-body {
+        display: none;
+        border-top: 1px solid #706f6f;
+        
+        .dropdown-item {
+            padding: 10px;
+        
+            &:hover {
+                cursor: pointer;
+                background: #706f6f;
+            }
+        }
+        .dropdown-item.selected {
+            background: #525252;
+        }
+    }
+    
+    .dropdown-body.open {
+        display: block;
+        transition: 1s ease;
+    }
+}
+
+
+
