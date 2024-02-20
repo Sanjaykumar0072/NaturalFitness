@@ -31,7 +31,7 @@ export default function Header() {
     return (
         <>
             <header>
-                <nav className="navbar" onClick={e => e.stopPropagation()}>
+                <nav className={click ? 'navbar active' : 'navbar'} id="navbar" onClick={e => e.stopPropagation()}>
                     <div className="nav-container">
                         <NavLink
                             aria-label="Home"

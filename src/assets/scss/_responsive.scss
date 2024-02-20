@@ -1,39 +1,212 @@
 // ********************Home********************************
-@media screen and (max-width: 1499px) { 
-
+@media screen and (max-width: 1799px) {
+    h1 {
+        font-size: 50px;
+    }
+    .section-banner {
+        min-height: 100dvh;
+    }
 }
-@media screen and (max-width: 1199px) { 
+@media screen and (max-width: 1199px) {
+    h1 {
+        font-size: 38px;
+    }
+    .section-banner {
+        min-height: 100dvh;
+        padding-top: 6rem;
+    }
+    .section1 {
+        .sec1-left-content {
+            h1 {
+                font-size: 40px;
+            }
+            p {
+                margin: 1rem 0 1rem;
+                font-size: 13px;
+            }
+            .gradient-button {
+                padding: 12px 20px;
+            }
+        }
 
+        .sec1-card {
+            bottom: -60px;
+            .card-box p {
+                font-size: 13px;
+            }
+        }
+    }
+    .section2 {
+        padding: 10rem 0 0;
+
+        .sec2-left-column {
+            p {
+                margin: 12px 0;
+                font-size: 13px;
+            }
+            .sec2-card {
+                .card-box {
+                    margin: 5px 0;
+                    .img {
+                        padding: 10px;
+                        display: flex;
+                    }
+                    p {
+                        margin: 5px 0 0;
+                    }
+                }
+            }
+        }
+        .sec2-right-column {
+            .sec2-img-btn {
+                button {
+                    margin-left: 5rem;
+                }
+            }
+        }
+        .sec2-img-bc img {
+            max-width: 20rem;
+        }
+        .sec2-row2 {
+            padding-top: 6rem;
+
+            h1.gradient-text {
+                white-space: normal;
+                font-size: 30px;
+            }
+        }
+        .sec2-row3 h1 {
+            font-size: 3.5rem;
+        }
+    }
+    .section1,
+    .section3,
+    .section7 {
+        .slick-slider {
+            .slick-list {
+                .slick-track {
+                    .slick-slide {
+                        .workout {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .slick-prev {
+                right: 0rem;
+            }
+            .slick-next {
+                right: 3rem;
+            }
+        }
+    }
+    .section4 {
+        .services .service-box h1 {
+            font-size: 2rem;
+        }
+    }
+    .testmonial {
+        .sec2-img-bc {
+            left: 0;
+            img {
+                max-width: 18rem;
+            }
+        }
+        .feedback {
+            h3 {
+                margin: 1rem 0;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        .slick-slider {
+            padding: 0;
+        }
+    }
+    
 }
-@media screen and (max-width: 1023px) { 
-
+@media screen and (max-width: 1023px) {
+    .section1 {
+        .sec1-card {
+            display: none;
+        }
+    }
+    .section2 {
+        padding: 6rem 3rem;
+        .sec2-right-column .sec2-img-btn button {
+            margin-left: 0;
+        }
+        .sec2-left-column h1 {
+            font-size: 30px;
+        }
+        .sec2-left-column p {
+            margin: 5px 0;
+            font-size: 12px;
+        }
+        .sec2-card {
+            .card-box {
+                h3 {
+                    font-size: 16px;
+                }
+            }
+        }
+        .sec2-row2 {
+            padding-top: 4rem;
+        }
+        .sec2-left-column h1 {
+            font-size: 25px;
+        }
+        .sec2-row3 {
+            padding: 3rem 0;
+        }
+    }
+    .section3 {
+        padding: 2rem 4rem;
+        .grad-stroke-font {
+            font-size: 20px;
+        }
+    }
+    .section4 .grad-stroke-font {
+        font-size: 20px;
+    }
+    .section7 {
+        padding-bottom: 0;
+        .grad-stroke-font {
+            font-size: 17px;
+            gap: 0;
+        }
+        .sec2-img-bc img {
+            max-width: 15rem;
+        }
+    }
 }
-@media screen and (max-width: 767px) { 
-
+@media screen and (max-width: 767px) {
 }
 // ********************About********************************
-@media screen and (max-width: 1499px) { 
-
+@media screen and (max-width: 1499px) {
 }
-@media screen and (max-width: 1199px) { 
-
+@media screen and (max-width: 1199px) {
 }
-@media screen and (max-width: 1023px) { 
-
+@media screen and (max-width: 1023px) {
 }
-@media screen and (max-width: 767px) { 
-
+@media screen and (max-width: 767px) {
 }
 // ********************Services********************************
-@media screen and (max-width: 1499px) { 
-
+@media screen and (max-width: 1499px) {
 }
-@media screen and (max-width: 1199px) { 
-
+@media screen and (max-width: 1199px) {
 }
-@media screen and (max-width: 1023px) { 
-
+@media screen and (max-width: 1023px) {
 }
-@media screen and (max-width: 767px) { 
-
+@media screen and (max-width: 767px) {
+}
+// ********************Contact********************************
+@media screen and (max-width: 1499px) {
+}
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 1023px) {
+}
+@media screen and (max-width: 767px) {
 }

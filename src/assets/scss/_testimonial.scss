@@ -1,0 +1,59 @@
+.testmonial {
+    padding-bottom: 10rem;
+    .sec2-img-bc {
+        left: 15%;
+    }
+    .feedback {
+        text-align: center;
+        margin: 2rem auto;
+
+        p {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        span {
+            color: #009deb;
+        }
+        h3 {
+            margin: 3rem 0;
+        }
+    }
+    .slick-slider {
+        .slick-prev,
+        .slick-next {
+            &::before {
+                content: "";
+                display: block;
+                background: url(/public/svg/Arrow.svg) no-repeat center;
+                width: 30px;
+                height: 30px;
+            }
+            &::after {
+                content: "";
+                display: block;
+                width: 3px;
+                height: 3rem;
+                background: #009deb;
+                position: absolute;
+                top: -8px;
+                left: -10px;
+            }
+        }
+        .slick-arrow {
+            top: 100%;
+        }
+        .slick-prev {
+            right: 3rem;
+            left: auto;
+        }
+        .slick-next {
+            right: 6rem;
+            &::before {
+                transform: rotate(180deg);
+            }
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

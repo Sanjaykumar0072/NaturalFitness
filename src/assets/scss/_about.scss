@@ -1,0 +1,82 @@
+$primaryColor1: linear-gradient(90deg, #009deb 25.82%, #ea1e7a 50.84%);
+$primaryColor2: linear-gradient(90deg, #ea1e7a 25.82%, #009deb 82.84%);
+$primaryColor3: linear-gradient(-135deg, #009deb 40.82%, #ea1e7a 90.84%);
+
+.about {
+    h1 {
+        font-size: 40px;
+    }
+    .section1.section-banner {
+        background: url(/public/images/about-banner.png) no-repeat center;
+        background-size: cover;
+
+        &::before {
+            background: linear-gradient(360deg, rgb(17, 17, 17) 0%, rgba(26, 26, 26, 0.2890406162) 60%);
+        }
+    }
+
+    .section2 {
+        padding-top: 7rem;
+        .sec2-right-column {
+            align-items: flex-start;
+            .sec2-img-bc.left {
+                &::before {
+                    left: -10px;
+                    background: $primaryColor3;
+                }
+            }
+        }
+        .sec2-row-1 {
+            .sec2-left-column {
+                max-width: 85%;
+
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+        .sec2-row-2 {
+            .sec2-left-column {
+                p {
+                    max-width: 500px;
+                    line-height: 1.6;
+                    letter-spacing: 1.5px;
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+    .section3 {
+        .center {
+            text-align: center;
+        }
+        .img-flex-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 0;
+            position: relative;
+            z-index: 2;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 6rem;
+                height: 6rem;
+                background: $primaryColor3;
+                top: 30px;
+                left: 50px;
+                z-index: -1;
+            }
+            img {
+                max-width: 270px;
+            }
+        }
+    }
+    .section7 {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+    
+}

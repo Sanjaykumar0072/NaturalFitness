@@ -1,0 +1,77 @@
+.services {
+    .section-banner {
+        background: url(/public/images/services-banner.png) no-repeat center;
+        background-size: cover;
+
+        &::before {
+            background: linear-gradient(360deg, rgb(17, 17, 17) 0%, rgba(26, 26, 26, 0.2890406162) 60%);
+        }
+        .abt-banner-left {
+            span:before {
+                right: 56%;
+            }
+        }
+    }
+
+    .section5 {
+        .small-title {
+            font-weight: 300 !important;
+        }
+        .stroke-text , .gradient-text {
+            font-weight: 900;
+        }
+    }
+    .section3 {
+        padding-top: 7rem;
+        .workouts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,3fr));
+            grid-column-gap: 5rem;
+            row-gap: 4rem;
+            margin-top: 3rem;
+
+            .workout {
+                img {
+                    max-width: 25rem;
+                }
+                h1 {
+                    font-size: 3rem;
+                }
+                h2 {
+                    margin: 10px 0;
+                }
+                .sec2-img-bc {
+                    width: 100%;
+
+                    &::before {
+                        left: -10px;
+                    }
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .section4 {
+        .services-flex-group {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            padding: 2rem 0;
+            .services-img {
+                max-width: 300px;
+                h3 {
+                   text-align: left;
+                   margin: 20px 0 10px;
+                }
+                p {
+                    text-align: left;
+                    color: #707070;
+                    line-height: 1.7;
+                }
+
+            }
+        }
+    }
+}

@@ -1,12 +1,13 @@
 footer {
     background: #111111;
-    color: #fff;
+    color: #707070;
     border-top: 1px solid #009deb;
     padding: 6rem 0 0;
 
-    h1 {
+    h2 {
         font-weight: 500;
         margin-bottom: 20px;
+        color: #fff;
     }
     ul {
         li {
@@ -59,45 +60,58 @@ footer {
             }
         }
     }
-    .subscription {
-        position: relative;
+    .newsletter {
+        form {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin: 10px 0px 15px;
+            padding: 0px;
+            position: relative;
 
-        input {
-            background: transparent;
-            color: #fff;
-            padding: 10px;
-            margin: 20px 0;
-            width: 100%;
-            border: 1px solid;
-            border-image-slice: 1;
-            border-width: 1px;
-            border-image-source: linear-gradient(90deg, #ea1e7a 25.82%, #009deb 82.84%);;
-        }
-        button {
-            position: absolute;
-            padding: 10px;
-            background: linear-gradient(50deg,  #ea1e7a 5.84%, #009deb 98.82%);
-            top: 20px;
-            right: 0;
-            width: 3rem;
-            height: 2.35rem;
-            border: none;
-            cursor: pointer;
+            .email {    
+                color: #555;
+                text-align: center;
+                width: calc(100% - 35px);
+                background-color: transparent;
+                line-height: 1.5em;
+                border: 1px solid #ccc;
+                border-right: 0;
+                padding: 8px 10px;
+                font-size: 12px;
+                text-align: left !important;
+                outline: none;
+                outline-width: 0px;
+                box-shadow: none;
+                -moz-box-shadow: none;
+                -webkit-box-shadow: none;
+                border-image-slice: 1;
+                border-width: 1px;
+                border-image-source: linear-gradient(90deg, #ea1e7a 25.82%, #009deb 82.84%);
+            }
+            button {
+                background: linear-gradient(50deg,  #ea1e7a 5.84%, #009deb 98.82%);
+                min-width: 55px;
+                height: 36px;
+                right: 0;
+                border: none;
+                box-shadow: none;
+                vertical-align: top;
+                cursor: pointer;
+                transition: all .3s ease;
 
-            &::before {
-                content: '';
-                background: url(/public/svg/darkArrow.svg) no-repeat center;
-                width: 20px;
-                height: 30px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin: 0px;
+                    background: url(/public/svg/darkArrow.svg) no-repeat center;
+                    vertical-align: -3px;
+                    transition: all .5s ease;
+                }
             }
         }
-    }
-    .newsletter {
         .socialIcons {
             display: flex;
             align-items: center;
@@ -115,6 +129,10 @@ footer {
             }
         }
     }
+    .container-fluid {
+        padding: 0;
+        margin: 0;
+    }
     .slider-column {
         padding: 0;
         .slick-slider {
@@ -122,9 +140,56 @@ footer {
                 height: 200px !important;
             }
         }
-
     }
     .copyright {
         padding: 20px 0;
+        color: #fff;
     }
+}
+
+// ********************Footer Responsive********************************
+@media screen and (max-width: 1499px) {
+}
+@media screen and (max-width: 1199px) {
+    footer {
+        .footer-col-1 {
+            .contact td {
+                font-size: 13px;
+            }
+            .description {
+                font-size: 13px;
+            }
+            .footer-logo img {
+                max-width: 9rem;
+            }
+            ul li {
+                font-size: 13px;
+            }
+        }
+        .container {
+            .row {
+                row-gap: 1rem;
+            }
+            .schedules {
+                td {
+                    font-size: 13px;
+                }
+            }
+            .newsletter {
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+        .container-fluid {
+            margin-top: 2rem;
+        }
+        .copyright {
+            padding: 10px 0;
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+}
+@media screen and (max-width: 767px) {
 }

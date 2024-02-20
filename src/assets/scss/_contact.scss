@@ -1,0 +1,166 @@
+.contact {
+    .section-banner {
+        background: url(/public/images/contact-banner.png) no-repeat center;
+        background-size: cover;
+
+        &::before {
+            background: linear-gradient(360deg, rgb(17, 17, 17) 0%, rgba(26, 26, 26, 0.2890406162) 60%);
+        }
+        .abt-banner-left {
+            span:before {
+                right: 54%;
+            }
+        }
+    }
+    .section2 {
+        padding-top: 3rem;
+        .gradient-text {
+            font-size: 42px;
+            background: linear-gradient(90deg, #009deb 20.82%, #ea1e7a 46.84%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .contact-form {
+            display: grid;
+            grid-template-columns: 45% 55%;
+            background-color: transparent;
+            border-radius: 10px;
+            margin: 0 auto;
+            // box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #ea1e7a, 0 0 30px #3385d8, 0 0 40px #3385d8, 0 0 50px #ea1e7a;
+            -webkit-animation: blink 0.7s infinite alternate;
+            animation: blink 0.7s infinite alternate;
+
+            aside {
+                background: #707070;
+                padding: 2rem;
+                ul {
+                    li {
+                        margin: 2.5rem 0;
+
+                        &:last-child {
+                            margin: 2.5rem 0 0;
+                        }
+                        .socialIcons {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            gap: 1rem;
+                            margin: 10px 0;
+
+                            img {
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+            form {
+                display: grid;
+                justify-content: center;
+                gap: 6px;
+                align-items: end;
+                align-content: center;
+                padding: 2rem;
+                border: 1px solid #fff;
+
+                a#reload_href {
+                    margin: 10px auto 0;
+                }
+            }
+            input,
+            textarea {
+                padding: 12px 8px;
+                margin: 10px 0;
+                outline: none;
+                border: 0;
+                font-size: 15px;
+                background-color: transparent;
+                border-radius: 0;
+                border: 1px solid #707070;
+                width: 25rem;
+                color: #2a2828;
+                transition: 0.5s ease;
+                // box-shadow: 2px 2px 32px 3px rgba(32, 29, 40, 0.43);
+                &::placeholder {
+                    color: #9fa3aa;
+                }
+
+                &:focus,
+                &:hover {
+                    outline: none;
+                    box-shadow: 0 0 0 5px #201d281e;
+                    border-image-slice: 1;
+                    border-width: 1px;
+                    border-image-source: linear-gradient(90deg, #ea1e7a 25.82%, #009deb 82.84%);
+                }
+            }
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                margin: 0;
+            }
+            .btn {
+                background: transparent;
+                color: #06acff;
+                font-weight: 500;
+                padding: 0.5rem;
+                font-family: inherit;
+                border-image-slice: 1;
+                border-width: 1px;
+                border-image-source: linear-gradient(90deg, #ea1e7a 25.82%, #009deb 82.84%);
+                border-radius: 5px;
+                margin-top: 1.3rem;
+                // width: 10rem;
+                width: 100%;
+                margin: 10px auto;
+                font-size: 1.2rem;
+                transition: 0.5s ease;
+                animation: pulse 2s infinite ease-out;
+
+                &:hover {
+                    color: #ffffffba;
+                }
+            }
+        }
+    }
+    .section3 {
+        .google-map {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.google-map {
+    padding: 20px;
+
+    .u-vr {
+        margin-bottom: 8px;
+    }
+    .map-container {
+        height: 500px;
+
+        .google-map {
+            padding: 20px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .info-window {
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: 70px;
+            padding-left: 85px;
+            width: 300px;
+
+            h4 {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}

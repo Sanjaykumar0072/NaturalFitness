@@ -8,6 +8,7 @@
 .container-fluid {
   padding-right: 20px;
   padding-left: 20px;
+  width: 100%;
 }
 
 .row {
@@ -500,7 +501,7 @@
 
 @media only screen and (min-width: 1024px) {
   .container {
-    width: 1000px;
+    width: 800px;
   }
 
   .col-md,

@@ -54,7 +54,7 @@ export default function Footer() {
             <footer>
                 <div className="container">
                     <div className="row center-xs start-sm start-md start-lg">
-                        <div className="col-xs-12 col-md-4 col-sm-4">
+                        <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                             <div className="footer-col-1">
                                 <div className="footer-logo">
                                     <img src="/public/svg/logo.svg" alt="Logo" />
@@ -78,9 +78,9 @@ export default function Footer() {
                                 </table>
                             </div>
                         </div>
-                        <div className="col-xs-5 col-md-2 col-sm-2">
+                        <div className="col-xs-5 col-sm-2 col-md-4 col-lg-2">
                             <div className="links">
-                                <h1>Links</h1>
+                                <h2>Links</h2>
                                 <ul>
                                     <li>About</li>
                                     <li>Services</li>
@@ -90,9 +90,9 @@ export default function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-xs-7 col-md-3 col-sm-3">
+                        <div className="col-xs-7 col-sm-3 col-md-4 col-lg-3">
                             <div className="schedules">
-                                <h1>Schedules</h1>
+                                <h2>Schedules</h2>
                                 <table>
                                     <tbody>
                                         <tr>
@@ -127,14 +127,14 @@ export default function Footer() {
                                 </table>
                             </div>
                         </div>
-                        <div className="col-xs-12 col-md-3 col-sm-3">
+                        <div className="col-xs-12 col-sm-3 col-md-4 col-lg-3">
                             <div className="newsletter">
-                                <h1>Newsletter</h1>
+                                <h2>Newsletter</h2>
                                 <p>Sign up for latest updates and offers</p>
-                                <div className="subscription">
-                                    <input type="text" placeholder="Your Email" />
-                                    <button></button>
-                                </div>
+                                <form action="" method="" onSubmit="" target="popupwindow">
+                                    <input name="email" className="email" placeholder="name@mail.com" />
+                                    <button type="submit"></button>
+                                </form>
                                 <div className="socialIcons">
                                     <div className="icon">
                                         <img src="/public/svg/fb.svg" alt="fb" />
@@ -150,10 +150,10 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="conatiner-fluid">
+                <div className="container-fluid">
                     <div className="row center-xs">
-                        <div className="col-xs-12 col-md-12 col-sm-12 slider-column">
-                            <h1>Instagram</h1>
+                        <div className="col-xs-12 col-sm-12 col-md-12 slider-column">
+                            <h2>Instagram</h2>
                             <Slider {...settings}>
                                 <img src='https://randomwordgenerator.com/img/picture-generator/tree-736885_640.jpg' alt='Image1' />
                                 <img src='https://randomwordgenerator.com/img/picture-generator/54e4d6414852a514f1dc8460962e33791c3ad6e04e5074417d2c7ed09048c7_640.jpg' alt='Image2' />

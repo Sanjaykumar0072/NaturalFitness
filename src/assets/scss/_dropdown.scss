@@ -2,6 +2,7 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     background-color: transparent;
     border: 1px solid #706f6f;
+    position: relative;
     
     .dropdown-header {
         padding: 15px;
@@ -13,7 +14,10 @@
     
     .dropdown-body {
         display: none;
-        border-top: 1px solid #706f6f;
+        border: 1px solid #706f6f;
+        background: #111111;
+        position: absolute;
+        top: 100%;
         
         .dropdown-item {
             padding: 10px;

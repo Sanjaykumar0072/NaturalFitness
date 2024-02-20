@@ -14,6 +14,11 @@ $poppins: "Poppins", sans-serif;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.02rem #fff;
 }
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
 
 .gradient-button {
     color: #009deb;
@@ -67,7 +72,6 @@ span {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex-wrap: wrap;
     gap: 10px;
     width: fit-content;
     white-space: nowrap;
@@ -80,14 +84,12 @@ span {
     color: #fff;
 }
 
-// ***************Section1******************
-.section1 {
+.section-banner {
     background: url(/public/images/sec1-bg.png) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     font-family: $poppins;
     height: 100%;
-    min-height: 100vh;
     padding-top: 12rem;
     position: relative;
     z-index: 3;
@@ -102,14 +104,16 @@ span {
         z-index: -10;
         background: linear-gradient(90deg, rgba(17, 17, 17, 1) 0%, rgba(26, 26, 26, 0.28904061624649857) 40%);
     }
+}
 
+// ***************Section1******************
+
+.section1 {
     .sec1-left-content {
         color: #fff;
         position: relative;
         z-index: 3;
-        h1 {
-            font-size: 60px;
-        }
+        
         p {
             max-width: 32rem;
             margin: 1rem 0 2rem;
@@ -124,7 +128,7 @@ span {
         gap: 20px;
         left: 10%;
         bottom: -70px;
-        padding-right: 15px;
+        padding-left: 15px;
         color: #fff;
         max-width: 80%;
 
@@ -136,7 +140,7 @@ span {
                 background: url(/public/svg/playButton.svg) no-repeat center;
                 background-size: cover;
                 top: 50%;
-                left: 38%;
+                left: 50%;
                 transform: translate(-50%, -50%);
                 width: 35px;
                 height: 35px;
@@ -163,17 +167,11 @@ span {
     .sec2-left-column {
         max-width: 35rem;
 
-        span,
-        h1 {
-            text-transform: uppercase;
-        }
         span {
+            text-transform: uppercase;
             background: linear-gradient(90deg, #009deb 35.82%, #ea1e7a 75.84%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-        }
-        h1 {
-            font-size: 50px;
         }
         p {
             margin: 20px 0;
@@ -226,12 +224,11 @@ span {
             background: linear-gradient(180deg, #009deb 35.82%, #ea1e7a 78.84%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 5rem;
         }
     }
 }
 
-.section1, .section3, .section7{
+.section1, .section3 {
     .slick-slider {
         padding: 2rem 0;
         .slick-list {
@@ -240,15 +237,11 @@ span {
                     &::nth-child(n + 2) {
                         margin: 0 20px;
                     }
-                    .workouts {
+                    .workout {
                         color: #fff;
                         padding-left: 2.5rem;
                         padding-top: 40px;
                         font-size: 25px;
-
-                        h1 {
-                            font-size: 5rem;
-                        }
 
                         img {
                             max-width: 320px;
@@ -319,7 +312,6 @@ span {
                 -webkit-text-fill-color: rgba(0, 0, 0, 0);
                 -webkit-background-clip: text;
                 -webkit-text-stroke: 1px #fff;
-                font-size: 3rem;
                 margin: 0;
                 position: absolute;
                 z-index: 2;
@@ -365,10 +357,10 @@ span {
             padding: 15px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             background-color: transparent;
-            border: 1px solid #706f6f;
+            border: 1px solid #707070;
 
             &::placeholder {
-                color: #fff;
+                color: #707070;
             }
         }
         button {
@@ -390,15 +382,14 @@ span {
         // &:nth-child(1) .sec2-img-bc::before {
         //     display: block;
         // }
-        h1 {
+        h2 {
             color: #fff;
-            font-size: 1.2rem;
             padding: 20px;
             text-align: left;
             margin: 0;
             position: absolute;
             z-index: 2;
-            top: 90%;
+            top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
             transition: 0.6s ease;
@@ -423,33 +414,5 @@ span {
     .gradient-button {
         margin: 3rem 0;
         padding: 15px 30px;
-    }
-}
-
-.section7 {
-    padding-bottom: 10rem;
-    .sec2-img-bc {
-        left: 15%;
-    }
-    .feedback {
-        text-align: center;
-        margin: 2rem auto;
-
-        p {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        span {
-            color: #009deb;
-        }
-        h3 {
-            margin: 3rem 0;
-        }
-    }
-    .slick-slider {
-        .slick-arrow {
-            top: auto;
-            bottom: 0;
-        }
     }
 }
