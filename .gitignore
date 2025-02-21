@@ -10,8 +10,13 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+README.md
 *.local
-
+*.firebase
+*.firebaserc
+*firebase.json
+*.css.map
+*.zip
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

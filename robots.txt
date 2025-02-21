@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/
+Disallow: /secret-page.html
+Allow: /sitemap.xml
+Sitemap: https://naturalfitnezz.com/sitemap.xml

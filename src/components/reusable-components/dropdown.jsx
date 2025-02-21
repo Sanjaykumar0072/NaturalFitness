@@ -1,22 +1,18 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
+import PropTypes from 'prop-types';
 
-export default function Dropdown({ data, placeholder, onSelectChange }) {
+export default function Dropdown({ data, placeholder, defaultDropdownItem, onSelectChange }) {
   const [isOpen, setOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(defaultDropdownItem || null);
   const dropdownRef = useRef(null);
 
   const toggleDropdown = () => setOpen(!isOpen);
 
   const handleItemClick = (id) => {
     const clickedItem = data.find((item) => item.id === id);
-    if (selectedItem && selectedItem.id === id) {
-      // Deselect the item if it's already selected
-      setSelectedItem(null);
-      onSelectChange(null); // Send null to parent component to indicate deselection
-    } else {
-      setSelectedItem(clickedItem);
-      onSelectChange(clickedItem); // Send selected item to parent component
-    }
+    setSelectedItem(clickedItem);
+    onSelectChange(clickedItem);
+    setOpen(false);
   };
 
   useEffect(() => {
@@ -33,12 +29,17 @@ export default function Dropdown({ data, placeholder, onSelectChange }) {
     };
   }, [dropdownRef]);
 
+  // Update the selected item when the defaultDropdownItem prop changes
+  useEffect(() => {
+    setSelectedItem(defaultDropdownItem || null);
+  }, [defaultDropdownItem]);
+
   return (
     <div className="dropdown" ref={dropdownRef}>
       <div className="dropdown-header" onClick={toggleDropdown}>
         {selectedItem ? selectedItem.label : placeholder}
         <img
-          src="/public/svg/arrow.svg"
+          src="/svg/arrow.svg"
           alt="arrow"
           style={{ transform: `${isOpen ? "rotate(90deg)" : "none"}`, width: "10px", transition: "0.3s ease" }}
         />
@@ -47,7 +48,7 @@ export default function Dropdown({ data, placeholder, onSelectChange }) {
         {data.map((item) => (
           <div
             key={item.id}
-            className={`dropdown-item ${item.id === selectedItem?.id && "selected"}`}
+            className={`dropdown-item ${selectedItem && item.id === selectedItem.id ? "selected" : ""}`}
             onClick={() => handleItemClick(item.id)}
           >
             {item.label}
@@ -57,3 +58,18 @@ export default function Dropdown({ data, placeholder, onSelectChange }) {
     </div>
   );
 }
+
+Dropdown.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      label: PropTypes.string.isRequired
+    })
+  ).isRequired,
+  placeholder: PropTypes.string.isRequired,
+  defaultDropdownItem: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    label: PropTypes.string
+  }),
+  onSelectChange: PropTypes.func.isRequired
+};

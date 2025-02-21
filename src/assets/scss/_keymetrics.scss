@@ -1,0 +1,14 @@
+.keymetrics {
+    text-align: center;
+    .key-main {
+        padding: 5rem 0;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        h1 {
+            background: linear-gradient(180deg, #009deb 35.82%, #ea1e7a 78.84%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 100px;
+        }
+    }
+}

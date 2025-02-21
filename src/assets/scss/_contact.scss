@@ -1,6 +1,6 @@
 .contact {
     .section-banner {
-        background: url(/public/images/contact-banner.png) no-repeat center;
+        background: url(/images/contact-banner.png) no-repeat center;
         background-size: cover;
 
         &::before {
@@ -38,18 +38,66 @@
                     li {
                         margin: 2.5rem 0;
 
+                        strong {
+                            font-size: 20px;
+                        }
+
+                        a {
+                            color: #fff;
+                        }
+
                         &:last-child {
                             margin: 2.5rem 0 0;
                         }
                         .socialIcons {
                             display: flex;
-                            align-items: center;
+                            align-items: flex-start;
                             justify-content: flex-start;
                             gap: 1rem;
                             margin: 10px 0;
 
-                            img {
+                            a {
                                 width: 25px;
+
+                                &:hover {
+                                    svg {
+                                        -webkit-filter: drop-shadow(6px 6px 2px #111111);
+                                        filter: drop-shadow(6px 6px 2px #111111);
+                                        transform: scale(1.1);
+                                        transition-duration: 0.4s;
+                                        path {
+                                            fill: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                            .fb:hover {
+                                svg {
+                                    path {
+                                        fill: #316ff6;
+                                    }
+                                }
+                            }
+                            .x:hover {
+                                svg {
+                                    path {
+                                        fill: #5cc6ef;
+                                    }
+                                }
+                            }
+                            .instagram:hover {
+                                svg {
+                                    path {
+                                        fill: #d62976;
+                                    }
+                                }
+                            }
+                            .thread:hover {
+                                svg {
+                                    path {
+                                        fill: #111111;
+                                    }
+                                }
                             }
                         }
                     }
@@ -79,7 +127,7 @@
                 border-radius: 0;
                 border: 1px solid #707070;
                 width: 25rem;
-                color: #2a2828;
+                color: #FFFFFF;
                 transition: 0.5s ease;
                 // box-shadow: 2px 2px 32px 3px rgba(32, 29, 40, 0.43);
                 &::placeholder {

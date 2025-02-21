@@ -1,0 +1,46 @@
+.blog-post {
+  background: #111111;
+  height: fit-content;
+  .banner {
+    text-align: center;
+    padding: 8rem 0 0;
+    max-width: 80%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    color: #111111;
+
+    h1 {
+      padding: 50px 0;
+      text-align: center;
+      white-space: normal;
+    }
+
+    .section {
+      background: transparent;
+      color: #111111;
+
+      ul {
+        li {
+          margin: 20px 0;
+
+          a {
+            color: #111111;
+            text-decoration: underline;
+            &:hover {
+              color: #009deb;
+            }
+          }
+        }
+      }
+    }
+  }
+}

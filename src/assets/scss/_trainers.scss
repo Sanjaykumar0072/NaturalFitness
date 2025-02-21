@@ -1,0 +1,137 @@
+$primaryColor1: linear-gradient(90deg, #009deb 25.82%, #ea1e7a 50.84%);
+$primaryColor2: linear-gradient(90deg, #ea1e7a 25.82%, #009deb 82.84%);
+$primaryColor3: linear-gradient(-135deg, #009deb 40.82%, #ea1e7a 90.84%);
+
+.trainers {
+  .services {
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &.sec2-img-bc {
+      width: 100%;
+      &::before {
+        background: linear-gradient(200deg, #009deb 32.82%, #ea1e7a 98.84%);
+        top: -11px;
+        left: 55px;
+        z-index: -1;
+      }
+      &:hover::before {
+        transform: none !important;
+      }
+      &::after {
+        display: none !important;
+      }
+      .row {
+        justify-content: space-between;
+      }
+    }
+
+    .service-box {
+      position: relative;
+      width: fit-content;
+      margin: 0 auto;
+      transition: all 0.6s ease;
+
+      .img-container {
+        overflow: hidden;
+        img {
+          transition: 0.8s ease;
+        }
+      }
+
+      .main {
+        text-align: center; /* Ensures everything is centered */
+        // width: fit-content;
+        // margin: 0 auto;
+        // transition: all 0.6s ease;
+        position: absolute;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+          -webkit-text-fill-color: rgba(0, 0, 0, 0);
+          -webkit-background-clip: text;
+          -webkit-text-stroke: 1px #fff;
+          margin: 0;
+          position: relative; /* Use relative positioning for automatic flow */
+          z-index: 2;
+          transform: translateY(70%);
+          padding: 1rem 0; /* Add padding for spacing from other elements */
+          transition: all 0.5s ease;
+        }
+        p {
+          position: relative; /* Remove absolute positioning to flow naturally */
+          z-index: 2;
+          margin: 1rem 0; /* Add margin to space from the h1 */
+          opacity: 0;
+          transition: all 0.6s ease;
+        }
+        .trainer-links {
+          position: relative; /* Remove absolute positioning for auto flow */
+          z-index: 2;
+          margin-top: 1.5rem; /* Ensure space from the paragraph */
+          opacity: 0;
+          transition: all 0.6s ease;
+
+          a {
+            &:hover {
+              svg {
+                -webkit-filter: drop-shadow(4px 4px 2px #111111);
+                filter: drop-shadow(4px 4px 2px #111111);
+                transition: all 0.5s ease;
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &:hover {
+        h1 {
+          -webkit-text-fill-color: #fff;
+          transform: translateY(
+            20px
+          ); /* Slight shift upwards for hover effect */
+          transition: all 0.5s ease;
+        }
+        p {
+          opacity: 1;
+          transform: translateY(
+            -5px
+          ); /* Slight shift upwards for hover effect */
+          transition: all 0.6s ease;
+          text-shadow: 2px 4px 4px #111111;
+        }
+        .trainer-links {
+          opacity: 1;
+          transform: translateY(
+            -5px
+          ); /* Slight shift upwards for hover effect */
+          transition: all 0.6s ease;
+        }
+        .img-container img {
+          transition: all 0.8s ease;
+          transform: scale(1.05);
+          filter: blur(3px);
+        }
+      }
+
+      .sec2-img-bc {
+        overflow: visible;
+        &::after {
+          display: none;
+        }
+        &::before {
+          background: $primaryColor3;
+          left: -10px;
+        }
+      }
+    }
+  }
+}

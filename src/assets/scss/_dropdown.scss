@@ -5,11 +5,12 @@
     position: relative;
     
     .dropdown-header {
-        padding: 15px;
+        padding: 0 15px;
         cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 60px;
     }
     
     .dropdown-body {
@@ -18,6 +19,7 @@
         background: #111111;
         position: absolute;
         top: 100%;
+        z-index: 100;
         
         .dropdown-item {
             padding: 10px;

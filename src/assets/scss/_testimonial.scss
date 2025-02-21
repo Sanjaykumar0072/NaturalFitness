@@ -1,14 +1,29 @@
 .testmonial {
     padding-bottom: 10rem;
+    .test-img {
+        display: flex;
+        align-items: center;
+    }
     .sec2-img-bc {
-        left: 15%;
+        left: 0%;
+        img {
+            height: 30rem;
+            // max-height: 30rem;
+            min-width: 25rem;
+        }
+    }
+    .gradient-text {
+        background: linear-gradient(90deg, #009deb 15.8%, #ea1e7a 65.84%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
     }
     .feedback {
         text-align: center;
-        margin: 2rem auto;
+        margin: 5rem auto;
 
         p {
-            max-width: 500px;
+            max-width: 90%;
             margin: 0 auto;
         }
         span {
@@ -21,6 +36,8 @@
     .slick-slider {
         .slick-prev,
         .slick-next {
+            position: absolute;
+            z-index: 99;
             &::before {
                 content: "";
                 display: block;
@@ -40,7 +57,7 @@
             }
         }
         .slick-arrow {
-            top: 100%;
+            top: 5%;
         }
         .slick-prev {
             right: 3rem;

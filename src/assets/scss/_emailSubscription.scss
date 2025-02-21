@@ -1,0 +1,63 @@
+.emailsubscription#emailsubscription {
+    form {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 3px;
+        align-items: center;
+        margin: 10px 0px 15px;
+        padding: 0px;
+        position: relative;
+
+        .email {
+            color: #555;
+            text-align: center;
+            width: calc(100% - 35px);
+            background-color: transparent;
+            line-height: 1.5em;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 12px;
+            text-align: left !important;
+            outline: none;
+            outline-width: 0px;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            border-image-slice: 1;
+            border-width: 1px;
+            border-image-source: linear-gradient(90deg, #ea1e7a 25.82%, #009deb 82.84%);
+
+            &::placeholder {
+                font-size: 14px;
+                opacity: 0.5;
+            }
+        }
+        button {
+            background: linear-gradient(50deg, #ea1e7a 5.84%, #009deb 98.82%);
+            min-width: 60px;
+            max-height: 40px;
+            min-height: 40px;
+            padding: 10px;
+            right: 0;
+            border: none;
+            box-shadow: none;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 0px;
+                background: url(/public/svg/darkArrow.svg) no-repeat center;
+                vertical-align: -3px;
+                transition: all 0.5s ease;
+            }
+        }
+        button.loading {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

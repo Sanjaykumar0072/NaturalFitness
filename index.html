@@ -1,51 +1,181 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- title and favicon -->
+    <!-- Character encoding and responsive design settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Logo icon for the website -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/svg+xml/png" href="/public/svg/logo.svg" />
-    <title>Natural Fitnezz - Body Fitness</title>
+    <link rel="icon" type="image/svg+xml/png" href="/assets/svg/logo.svg"
+      alt="Logo" />
 
-    <!-- meta tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Your fitness website description goes here.">
-    <meta name="keywords" content="fitness, exercise, health, gym, workout">
+    <!-- Title of your website for search results -->
+    <title>Natural Fitnezz - Personal Fitness Trainer | Custom Workouts & Online
+      Training</title>
+
+    <!-- Description optimized for SEO, including target keywords -->
+    <meta name="description"
+      content="Get personalized workout plans, nutrition guidance, and online training from certified fitness experts. Start your fitness journey today with custom fitness solutions!">
+
+    <!-- Keywords relevant to your fitness website -->
+    <meta name="keywords"
+      content="natural fitnezz, natural fitnezz nolambur, fitness, personal trainer, online training, workout plans, weight loss, muscle building, health, wellness, strength training, cardio exercises, nutrition, fitness coaching">
+
+    <!-- Author information -->
     <meta name="author" content="Natural Fitnezz">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://example.com">
 
-    <!-- Open Graph (og) meta tags -->
-    <meta property="og:title" content="Natural Fitnezz - body Fitness, health, gym, workout">
-    <meta property="og:description" content="Your fitness website description goes here.">
-    <meta property="og:url" content="https://example.com">
+    <!-- Canonical URL to avoid duplicate content issues -->
+    <link rel="canonical" href="https://naturalfitnezz.com/">
+
+    <!-- Facebook and LinkedIn meta tags -->
+    <meta property="og:title"
+      content="Transform Your Body with Custom Fitness Plans!">
+    <meta property="og:description"
+      content="Join our fitness program and get personalized workout and nutrition plans. Start now to achieve your health and fitness goals.">
+    <meta property="og:url" content="https://naturalfitnezz.com/">
+    <meta property="og:image"
+      content="http://naturalfitnezz.com/assets/logo-uiNHvfgL.svg">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://example.com/images/og-image.jpg">
-    <meta property="og:image:alt" content="/public/svg/logo.svg">
     <meta property="og:site_name" content="Natural Fitnezz">
 
-     <!-- Twitter meta tags -->
-     <meta name="twitter:card" content="summary_large_image">
-     <meta name="twitter:title" content="Fitness Website">
-     <meta name="twitter:description" content="Your fitness website description goes here.">
-     <meta name="twitter:image" content="https://example.com/images/twitter-image.jpg">
+    <!-- Twitter Card meta tags (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+      content="Personalized Fitness Coaching | Transform Your Life Today!">
+    <meta name="twitter:description"
+      content="Access tailored workouts, expert nutrition advice, and online fitness coaching. Let's achieve your fitness goals together!">
+    <meta name="twitter:image"
+      content="http://naturalfitnezz.com/assets/logo-uiNHvfgL.svg">
+    <meta property="twitter:url" content="https://x.com/Natural_fitnezz">
+
+    <!-- Instagram Card meta tags (for Twitter sharing) -->
+    <meta name="instagram:card" content="summary_large_image">
+    <meta name="instagram:title"
+      content="Personalized Fitness Coaching | Transform Your Life Today!">
+    <meta name="instagram:description"
+      content="Access tailored workouts, expert nutrition advice, and online fitness coaching. Let's achieve your fitness goals together!">
+    <meta name="instagram:image"
+      content="http://naturalfitnezz.com/assets/logo-uiNHvfgL.svg">
+    <meta property="instagram:url" content="https://www.instagram.com/natural_fitnezz_">
+
+    <!-- facebook Card meta tags (for Twitter sharing) -->
+    <meta name="facebook:card" content="summary_large_image">
+    <meta name="facebook:title"
+      content="Personalized Fitness Coaching | Transform Your Life Today!">
+    <meta name="facebook:description"
+      content="Access tailored workouts, expert nutrition advice, and online fitness coaching. Let's achieve your fitness goals together!">
+    <meta name="facebook:image"
+      content="http://naturalfitnezz.com/assets/logo-uiNHvfgL.svg">
+    <meta property="facebook:url" content="https://www.facebook.com/naturalfitnezz.naturalfitnezz">
+
+    <!-- Allow search engines to index your page and follow links -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Optimize for mobile and add-to-home-screen for mobile users -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#009DEB">
+
+    <meta name="google-site-verification"
+      content="hIkrHn8QtJ_xqEQ785DegbQqYRnn3yy4lScpGrfBIew" />
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet">
 
     <!-- react slick -->
-    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" charset="UTF-8"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
 
-    <!-- Google Map Api -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAet8Mk1nPvOn_AebLE5ZxXoGejOD8tPzA&amp;libraries=places"></script>
-    
-
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WWLFKZR9');
+  </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Your Fitness Website",
+        "url": "https://www.naturalfitnezz.com",
+        "logo": "http://naturalfitnezz.com/assets/logo-uiNHvfgL.svg",
+        "description": "Personalized fitness training, online coaching, and custom workout plans for weight loss, muscle building, and overall health.",
+        "sameAs": [
+          "https://www.facebook.com/naturalfitnezz.naturalfitnezz",
+          "https://www.instagram.com/natural_fitnezz_",
+          "https://www.threads.net/@natural_fitnezz_",
+          "https://x.com/Natural_fitnezz"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-866-725-6186",
+          "contactType": "Customer Service"
+        }
+      }
+      </script>
+
+    <!-- Local business schema for targeting local customers -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FitnessCenter",
+        "name": "Natural Fitnezz",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "SPR Sports Academy",
+          "addressLocality": "Nolambur, Chennai",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "600095",
+          "addressCountry": "India"
+        },
+        "telephone": "+91-866-725-6186",
+        "priceRange": "$$",
+        "url": "https://www.naturalfitnezz.com",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "13.07509810548743",
+          "longitude": "80.16914586441789"
+        },
+        "openingHours": "Mo-Sa 06:00-22:00",
+        "sameAs": [
+          "https://www.facebook.com/naturalfitnezz.naturalfitnezz",
+          "https://www.instagram.com/natural_fitnezz_",
+          "https://www.threads.net/@natural_fitnezz_",
+          "https://x.com/Natural_fitnezz"
+        ]
+      }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async
+      src="https://www.googletagmanager.com/gtag/js?id=G-466QE64MJ7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-466QE64MJ7');
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WWLFKZR9"
+        height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
   </body>
 </html>

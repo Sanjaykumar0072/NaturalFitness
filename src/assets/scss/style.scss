@@ -1,13 +1,25 @@
-@import '_reset.scss';
-@import '_flexboxgrid.scss';
-@import '_dropdown.scss';
-@import '_testimonial.scss';
+// components
+@import '_reset';
+@import '_flexboxgrid';
+@import '_dropdown';
+@import '_testimonial';
+@import '_fitnessCalculator';
+@import '_galleryModal';
+@import '_videoPlaylist';
+@import '_keymetrics';
+@import '_trainers';
+@import '_emailSubscription';
+@import '_loader';
+@import '_header';
+@import '_footer';
 
 // pages
-@import '_header.scss';
-@import '_footer.scss';
-@import '_home.scss';
-@import '_about.scss';
-@import '_services.scss';
-@import '_contact.scss';
-@import '_responsive.scss';
+@import '_home';
+@import '_about';
+@import '_services';
+@import '_contact';
+@import '_gallery';
+@import '_blogPosts';
+
+// Responsive
+@import '_responsive';
